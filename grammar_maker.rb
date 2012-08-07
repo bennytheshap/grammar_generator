@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 require 'poisson'
 class Array
   def random_element
