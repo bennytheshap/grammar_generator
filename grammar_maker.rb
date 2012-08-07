@@ -20,9 +20,9 @@ def poisson_random lambda
    k - 1
 end
 
-Log_Symbols = [:foo, :bar, :charlie, :dead, :evil, '.']
+Log_Symbols = ['.', :foo, :bar, :charlie, :dead, :evil]
 Operators = ['*', '+']
-Alphabet = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+Alphabet = '.abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def make_random_grammar(symbols, operators, length)
   if length == 0
@@ -46,9 +46,7 @@ def make_random_grammar(symbols, operators, length)
 end
 
 def singlify input
-  symbols_to_map = Log_Symbols.clone
-  symbols_to_map.delete '.'
-  index = symbols_to_map.index input
+  index = Log_Symbols.index input
   if index
     Alphabet[index]
   else
