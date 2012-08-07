@@ -18,10 +18,9 @@ def poisson_random lambda
    k - 1
 end
 
-Symbols = [:a, :b, :c, :d, :e, '.']
+Symbols = [:foo, :bar, :charlie, :dead, :evil, '.']
 Operators = ['*', '+']
 
-#todo: add grouping (e.g., repeated strings)
 def make_random_grammar(symbols, operators, length)
   if length == 0
     []
@@ -42,6 +41,7 @@ def make_random_grammar(symbols, operators, length)
     end
   end    
 end
+
 
 
 
