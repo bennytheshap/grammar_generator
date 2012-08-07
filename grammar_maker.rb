@@ -1,6 +1,6 @@
 require_relative 'utils.rb'
 
-Log_Symbols = ['.', :foo, :bar, :charlie, :dead, :evil]
+Log_Symbols = ['.', :apple, :bar, :charlie, :dead, :evil, :funny, :gasp]
 
 10.times do |length|
   ((Log_Symbols.length-1) ** length).times do 
