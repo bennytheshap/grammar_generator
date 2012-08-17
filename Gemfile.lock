@@ -1,11 +1,15 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    bloomfilter-rb (2.1.1)
+      redis
     poisson (0.1)
+    redis (3.0.1)
 
 PLATFORMS
   java
   ruby
 
 DEPENDENCIES
+  bloomfilter-rb
   poisson
